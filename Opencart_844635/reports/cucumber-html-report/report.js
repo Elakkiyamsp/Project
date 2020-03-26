@@ -50,28 +50,28 @@ formatter.match({
   "location": "RegisterSteps.the_user_launch_the_browser_for_register()"
 });
 formatter.result({
-  "duration": 15754721207,
+  "duration": 11283611391,
   "status": "passed"
 });
 formatter.match({
   "location": "RegisterSteps.the_user_opens_opencart_register_page()"
 });
 formatter.result({
-  "duration": 3028581252,
+  "duration": 2478735157,
   "status": "passed"
 });
 formatter.match({
   "location": "RegisterSteps.the_user_enters_the_valid_register_details()"
 });
 formatter.result({
-  "duration": 8170563465,
+  "duration": 6441706143,
   "status": "passed"
 });
 formatter.match({
   "location": "RegisterSteps.the_user_close_the_opencart_register_page()"
 });
 formatter.result({
-  "duration": 2278087341,
+  "duration": 2271368941,
   "status": "passed"
 });
 formatter.scenarioOutline({
@@ -187,14 +187,14 @@ formatter.match({
   "location": "LoginSteps.the_user_launch_the_browser_for_login()"
 });
 formatter.result({
-  "duration": 9825236363,
+  "duration": 10047441328,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.the_user_opens_opencart_login_page()"
 });
 formatter.result({
-  "duration": 2711618043,
+  "duration": 2134026608,
   "status": "passed"
 });
 formatter.match({
@@ -211,14 +211,14 @@ formatter.match({
   "location": "LoginSteps.the_user_enters_the_valid_login_details(String,String)"
 });
 formatter.result({
-  "duration": 9615305133,
+  "duration": 9239305083,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.the_user_close_the_opencart_login_page()"
 });
 formatter.result({
-  "duration": 2461017835,
+  "duration": 466230264,
   "status": "passed"
 });
 formatter.scenario({
@@ -267,14 +267,14 @@ formatter.match({
   "location": "LoginSteps.the_user_launch_the_browser_for_login()"
 });
 formatter.result({
-  "duration": 11873302099,
+  "duration": 8093237256,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.the_user_opens_opencart_login_page()"
 });
 formatter.result({
-  "duration": 2304870352,
+  "duration": 2244364074,
   "status": "passed"
 });
 formatter.match({
@@ -291,14 +291,14 @@ formatter.match({
   "location": "LoginSteps.the_user_enters_the_valid_login_details(String,String)"
 });
 formatter.result({
-  "duration": 7929229366,
+  "duration": 8141184409,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.the_user_close_the_opencart_login_page()"
 });
 formatter.result({
-  "duration": 2178523962,
+  "duration": 2187558005,
   "status": "passed"
 });
 formatter.scenario({
@@ -339,29 +339,29 @@ formatter.match({
   "location": "SearchSteps.launch_the_browser()"
 });
 formatter.result({
-  "duration": 4637252027,
+  "duration": 4342003114,
   "status": "passed"
 });
 formatter.match({
   "location": "SearchSteps.the_user_opens_the_opencart_search_page()"
 });
 formatter.result({
-  "duration": 5196310637,
+  "duration": 4539173275,
   "status": "passed"
 });
 formatter.match({
   "location": "SearchSteps.the_user_search_the_product()"
 });
 formatter.result({
-  "duration": 5945626859,
-  "status": "passed"
+  "duration": 4190249512,
+  "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:87)\r\n\tat org.junit.Assert.assertTrue(Assert.java:42)\r\n\tat org.junit.Assert.assertTrue(Assert.java:53)\r\n\tat com.Opencart.stepdefinition.SearchSteps.the_user_search_the_product(SearchSteps.java:34)\r\n\tat ✽.Then the user search the product(src/main/resources/feature/Opencart.feature:32)\r\n",
+  "status": "failed"
 });
 formatter.match({
   "location": "SearchSteps.the_user_close_the_search_page()"
 });
 formatter.result({
-  "duration": 2435630238,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.scenario({
   "line": 36,
@@ -401,28 +401,28 @@ formatter.match({
   "location": "AddToCartSteps.launching_the_browser()"
 });
 formatter.result({
-  "duration": 4227562126,
+  "duration": 3950699946,
   "status": "passed"
 });
 formatter.match({
   "location": "AddToCartSteps.the_user_opens_the_opencart_page()"
 });
 formatter.result({
-  "duration": 7522615095,
+  "duration": 3981524897,
   "status": "passed"
 });
 formatter.match({
   "location": "AddToCartSteps.the_user_select_the_product_and_add_to_cart()"
 });
 formatter.result({
-  "duration": 24199894290,
+  "duration": 16897639186,
   "status": "passed"
 });
 formatter.match({
   "location": "AddToCartSteps.the_user_close_the_website()"
 });
 formatter.result({
-  "duration": 2250930459,
+  "duration": 519562263,
   "status": "passed"
 });
 formatter.scenario({
@@ -463,28 +463,28 @@ formatter.match({
   "location": "DesktopSteps.launching_browser()"
 });
 formatter.result({
-  "duration": 4112699040,
+  "duration": 4413212389,
   "status": "passed"
 });
 formatter.match({
   "location": "DesktopSteps.the_user_opens_the_home_page()"
 });
 formatter.result({
-  "duration": 6682425771,
+  "duration": 9316456713,
   "status": "passed"
 });
 formatter.match({
   "location": "DesktopSteps.the_user_select_the_desktop()"
 });
 formatter.result({
-  "duration": 9019265661,
+  "duration": 12173041905,
   "status": "passed"
 });
 formatter.match({
   "location": "DesktopSteps.the_user_close_the_browser()"
 });
 formatter.result({
-  "duration": 2260983527,
+  "duration": 2178990123,
   "status": "passed"
 });
 formatter.scenario({
@@ -525,28 +525,28 @@ formatter.match({
   "location": "AddressBookSteps.the_user_launch_the_browser_for_address_book_scenario()"
 });
 formatter.result({
-  "duration": 3814992695,
+  "duration": 4482516388,
   "status": "passed"
 });
 formatter.match({
   "location": "AddressBookSteps.the_user_opens_the_webpage()"
 });
 formatter.result({
-  "duration": 15470703997,
+  "duration": 16298082774,
   "status": "passed"
 });
 formatter.match({
   "location": "AddressBookSteps.the_user_enters_the_address_book_details()"
 });
 formatter.result({
-  "duration": 21256700151,
+  "duration": 20505135231,
   "status": "passed"
 });
 formatter.match({
   "location": "AddressBookSteps.the_user_close_the_webpage()"
 });
 formatter.result({
-  "duration": 382677436,
+  "duration": 2184804187,
   "status": "passed"
 });
 });

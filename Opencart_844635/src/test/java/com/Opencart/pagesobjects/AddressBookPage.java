@@ -1,8 +1,13 @@
 package com.Opencart.pagesobjects;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -59,13 +64,13 @@ public class AddressBookPage
 		}
 	}
 	
-	public void url() //login to account
+	public void url(String emailid,String pass) //login to account
 	{
 		driver.get("https://demo.opencart.com/");
 		driver.findElement(my_account).click();
 		driver.findElement(login).click();
-		driver.findElement(email).sendKeys("soundaryariya27@gmail.com");
-		driver.findElement(password).sendKeys("sound");
+		driver.findElement(email).sendKeys(emailid);
+		driver.findElement(password).sendKeys(pass);
 		driver.findElement(login_button).click();
 	}
 
@@ -90,6 +95,15 @@ public class AddressBookPage
 		driver.findElement(confirm).click();
 		Thread.sleep(5000);
 	}
+	
+	// Used to take screenshot
+		public void screenshot(String path) throws IOException {
+
+			TakesScreenshot ts = (TakesScreenshot) driver;                                   //Creates object for screenshot class                       
+			File SrcFile = ts.getScreenshotAs(OutputType.FILE);                             //Stores screenshot as file
+			FileUtils.copyFile(SrcFile, new File(path));                                    //Copy the file in the given path
+		}
+
 	
 	public void close() //close browser
 	{

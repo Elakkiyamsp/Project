@@ -28,7 +28,7 @@ public class DesktopSteps
 	public void the_user_select_the_desktop() throws Throwable 
 	{
 		dp.select_desktop();
-	
+		dp.screenshot("src\\test\\resources\\Screenshot\\desktop.png");
 	}
 	
 	@Then("^the user close the browser$")

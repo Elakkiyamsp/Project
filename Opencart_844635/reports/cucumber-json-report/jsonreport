@@ -12,7 +12,7 @@
         "steps": [
           {
             "result": {
-              "duration": 15754721207,
+              "duration": 11283611391,
               "status": "passed"
             },
             "line": 7,
@@ -24,7 +24,7 @@
           },
           {
             "result": {
-              "duration": 3028581252,
+              "duration": 2478735157,
               "status": "passed"
             },
             "line": 8,
@@ -36,7 +36,7 @@
           },
           {
             "result": {
-              "duration": 8170563465,
+              "duration": 6441706143,
               "status": "passed"
             },
             "line": 9,
@@ -48,7 +48,7 @@
           },
           {
             "result": {
-              "duration": 2278087341,
+              "duration": 2271368941,
               "status": "passed"
             },
             "line": 10,
@@ -76,7 +76,7 @@
         "steps": [
           {
             "result": {
-              "duration": 9825236363,
+              "duration": 10047441328,
               "status": "passed"
             },
             "line": 16,
@@ -88,7 +88,7 @@
           },
           {
             "result": {
-              "duration": 2711618043,
+              "duration": 2134026608,
               "status": "passed"
             },
             "line": 17,
@@ -100,7 +100,7 @@
           },
           {
             "result": {
-              "duration": 9615305133,
+              "duration": 9239305083,
               "status": "passed"
             },
             "line": 18,
@@ -126,7 +126,7 @@
           },
           {
             "result": {
-              "duration": 2461017835,
+              "duration": 466230264,
               "status": "passed"
             },
             "line": 19,
@@ -158,7 +158,7 @@
         "steps": [
           {
             "result": {
-              "duration": 11873302099,
+              "duration": 8093237256,
               "status": "passed"
             },
             "line": 16,
@@ -170,7 +170,7 @@
           },
           {
             "result": {
-              "duration": 2304870352,
+              "duration": 2244364074,
               "status": "passed"
             },
             "line": 17,
@@ -182,7 +182,7 @@
           },
           {
             "result": {
-              "duration": 7929229366,
+              "duration": 8141184409,
               "status": "passed"
             },
             "line": 18,
@@ -208,7 +208,7 @@
           },
           {
             "result": {
-              "duration": 2178523962,
+              "duration": 2187558005,
               "status": "passed"
             },
             "line": 19,
@@ -240,7 +240,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4637252027,
+              "duration": 4342003114,
               "status": "passed"
             },
             "line": 30,
@@ -252,7 +252,7 @@
           },
           {
             "result": {
-              "duration": 5196310637,
+              "duration": 4539173275,
               "status": "passed"
             },
             "line": 31,
@@ -264,8 +264,9 @@
           },
           {
             "result": {
-              "duration": 5945626859,
-              "status": "passed"
+              "duration": 4190249512,
+              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:87)\r\n\tat org.junit.Assert.assertTrue(Assert.java:42)\r\n\tat org.junit.Assert.assertTrue(Assert.java:53)\r\n\tat com.Opencart.stepdefinition.SearchSteps.the_user_search_the_product(SearchSteps.java:34)\r\n\tat ✽.Then the user search the product(src/main/resources/feature/Opencart.feature:32)\r\n",
+              "status": "failed"
             },
             "line": 32,
             "name": "the user search the product",
@@ -276,8 +277,7 @@
           },
           {
             "result": {
-              "duration": 2435630238,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 33,
             "name": "the user close the search page",
@@ -304,7 +304,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4227562126,
+              "duration": 3950699946,
               "status": "passed"
             },
             "line": 38,
@@ -316,7 +316,7 @@
           },
           {
             "result": {
-              "duration": 7522615095,
+              "duration": 3981524897,
               "status": "passed"
             },
             "line": 39,
@@ -328,7 +328,7 @@
           },
           {
             "result": {
-              "duration": 24199894290,
+              "duration": 16897639186,
               "status": "passed"
             },
             "line": 40,
@@ -340,7 +340,7 @@
           },
           {
             "result": {
-              "duration": 2250930459,
+              "duration": 519562263,
               "status": "passed"
             },
             "line": 41,
@@ -368,7 +368,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4112699040,
+              "duration": 4413212389,
               "status": "passed"
             },
             "line": 46,
@@ -380,7 +380,7 @@
           },
           {
             "result": {
-              "duration": 6682425771,
+              "duration": 9316456713,
               "status": "passed"
             },
             "line": 47,
@@ -392,7 +392,7 @@
           },
           {
             "result": {
-              "duration": 9019265661,
+              "duration": 12173041905,
               "status": "passed"
             },
             "line": 48,
@@ -404,7 +404,7 @@
           },
           {
             "result": {
-              "duration": 2260983527,
+              "duration": 2178990123,
               "status": "passed"
             },
             "line": 49,
@@ -432,7 +432,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3814992695,
+              "duration": 4482516388,
               "status": "passed"
             },
             "line": 55,
@@ -444,7 +444,7 @@
           },
           {
             "result": {
-              "duration": 15470703997,
+              "duration": 16298082774,
               "status": "passed"
             },
             "line": 56,
@@ -456,7 +456,7 @@
           },
           {
             "result": {
-              "duration": 21256700151,
+              "duration": 20505135231,
               "status": "passed"
             },
             "line": 57,
@@ -468,7 +468,7 @@
           },
           {
             "result": {
-              "duration": 382677436,
+              "duration": 2184804187,
               "status": "passed"
             },
             "line": 58,

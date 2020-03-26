@@ -27,6 +27,7 @@ public class AddToCartSteps
 	public void the_user_select_the_product_and_add_to_cart() throws Throwable 
 	{
 		ac.add_to_cart();
+		ac.screenshot("src\\test\\resources\\Screenshot\\addcart.png");
 	   
 	}
 

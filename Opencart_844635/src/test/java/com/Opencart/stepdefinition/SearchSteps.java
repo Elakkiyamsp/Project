@@ -1,5 +1,7 @@
 package com.Opencart.stepdefinition;
 
+import org.junit.Assert;
+
 import com.Opencart.pagesobjects.SearchPage;
 
 import cucumber.api.java.en.Given;
@@ -25,7 +27,13 @@ public class SearchSteps
 	@Then("^the user search the product$")
 	public void the_user_search_the_product() throws Throwable 
 	{
-		sp.search_product();
+		int link=sp.search_product();
+		if(link>1) 
+        {
+			
+			Assert.assertTrue(false);
+			
+		}
 	}
 
 	@Then("^the user close the search page$")

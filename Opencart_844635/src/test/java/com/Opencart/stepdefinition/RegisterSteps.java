@@ -27,6 +27,7 @@ public void the_user_opens_opencart_register_page() throws Throwable {
 @Then("^the user enters the valid register details$")
 public void the_user_enters_the_valid_register_details() throws Throwable {
 	rp.register_details();
+	rp.screenshot("src\\test\\resources\\Screenshot\\register.png");
 }
 
 @Then("^the user close the opencart register page$")

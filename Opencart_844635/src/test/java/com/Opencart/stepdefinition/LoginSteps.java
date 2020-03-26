@@ -31,6 +31,7 @@ public void the_user_enters_the_valid_login_details(String emailid,String pass) 
 {
 	lp.login_details(emailid,pass);
 	Thread.sleep(2000);
+	lp.screenshot("src\\test\\resources\\Screenshot\\login.png");
 }
 
 @Then("^the user close the opencart login page$")

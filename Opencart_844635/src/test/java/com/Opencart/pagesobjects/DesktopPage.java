@@ -1,9 +1,14 @@
 package com.Opencart.pagesobjects;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.WebElement;
@@ -20,6 +25,7 @@ public class DesktopPage
 	By show_all_desktop=By.linkText("Show All Desktops");
 	By desktop_mac=By.xpath("//*[@id=\"column-left\"]/div[1]/a[3]");
 	By mac=By.linkText("iMac");
+	By price=By.xpath("//*[@id=\"content\"]/div[2]/div/div/div[2]/div[1]/p[2]");
 	
 	public void launching_browser(String browser) 
 	{
@@ -64,7 +70,20 @@ public class DesktopPage
 		WebElement c=driver.findElement(mac);
 		js.executeScript("arguments[0].scrollIntoView();", c);//scroll till desired item is got
 		Thread.sleep(3000);
+		
+		String s=driver.findElement(price).getText(); //get the price name
+		System.out.println(s); //print the price name
+		Thread.sleep(3000);
 	}
+	
+	// Used to take screenshot
+		public void screenshot(String path) throws IOException {
+
+			TakesScreenshot ts = (TakesScreenshot) driver;                                   //Creates object for screenshot class                       
+			File SrcFile = ts.getScreenshotAs(OutputType.FILE);                             //Stores screenshot as file
+			FileUtils.copyFile(SrcFile, new File(path));                                    //Copy the file in the given path
+		}
+
 	public void close_browser()
 	{
 		driver.close();//close browser

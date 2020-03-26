@@ -1,8 +1,13 @@
 package com.Opencart.pagesobjects;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -71,6 +76,15 @@ public class LoginPage
 		driver.findElement(login_submit).click();//click submit button
 		Thread.sleep(3000);
 	}
+	
+	// Used to take screenshot
+		public void screenshot(String path) throws IOException {
+
+			TakesScreenshot ts = (TakesScreenshot) driver;                                   //Creates object for screenshot class                       
+			File SrcFile = ts.getScreenshotAs(OutputType.FILE);                             //Stores screenshot as file
+			FileUtils.copyFile(SrcFile, new File(path));                                    //Copy the file in the given path
+		}
+
 	
 	public void quit()
 	{
